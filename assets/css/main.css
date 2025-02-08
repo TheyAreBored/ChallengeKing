@@ -69,7 +69,15 @@ input, select, textarea {
 /* Neil Custom */
 
 #top_section {
-	color: red;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    max-width: 900px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #87CDCA;
+	text-align: center;
+}
+	
 }
 
 
