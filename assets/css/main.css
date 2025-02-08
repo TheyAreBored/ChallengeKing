@@ -75,15 +75,14 @@ input, select, textarea {
     max-width: 900px;
     border-radius: 0px 0px 20px 20px;
     background-color: #87CDCA;
-	text-align: center;
+    text-align: center;
 }
 
 #ck_logo {
-   width:392px; /*width of your image*/
-   height:132px; /*height of your image*/
-   background-image:url('/images/challenge_king_logo.png');
-   margin:0; /* If you want no margin */
-   padding:0; /*if your want to padding */
+   display: block;
+   width: 100%;
+   height: auto;
+   margin: 0 auto;
 }
 
 
