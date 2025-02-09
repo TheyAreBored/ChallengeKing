@@ -107,6 +107,10 @@ div#king_waving_no_hands {
 	padding-left: 53px;
 }
 
+div#king_waving_no_hands img {
+    width: 179.22px;
+}
+
 div#app_store_icons {
 	padding-top: 8px;
 }
