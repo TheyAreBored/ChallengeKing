@@ -68,6 +68,12 @@ input, select, textarea {
 }
 
 /* Neil Custom */
+.quicksand-medium {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+}
 
 #top_section {
     width: 90%;
