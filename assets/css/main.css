@@ -93,18 +93,16 @@ p {
 	}
 }
 
+div#ck_logo {
+	padding-top: 40px;
+}
+
 div#fun_challenges_text {
-	position: relative;
-	top: 50px;
+	padding-top: 10px
 }
 
 div#king_waving_no_hands {
-	position: relative;
-   	width: 100%;
-   	height: auto;
-   	margin: 0 auto;
-   	position: relative;
-
+	padding-top: 15px;
 }
 
 
