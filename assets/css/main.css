@@ -76,6 +76,7 @@ input, select, textarea {
 }
 
 #top_section {
+    display: block;
     width: 90%;
     height: 450px;
     margin: auto;
@@ -87,24 +88,23 @@ input, select, textarea {
 
 /*Screen Size less than 400W */
 @media (max-width: 400px) {
-	
 	#top_section {
 	width: 96.5%;
 	}
-	
-	}
+}
 
-#ck_logo {
+div#ck_logo {
    display: block;
    width: 100%;
    height: auto;
    margin: 0 auto;
-	position: relative;
-	top: 40px;
+   position: relative;
+   top: 40px;
 }
 
 
-	
+div#fun_challenges_div {
+	display: block;
 }
 
 
