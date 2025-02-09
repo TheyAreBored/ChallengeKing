@@ -68,7 +68,7 @@ input, select, textarea {
 }
 
 /* Neil Custom */
-.quicksand-medium {
+p {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 500px;
@@ -86,7 +86,7 @@ input, select, textarea {
     text-align: center;
 }
 
-/*Screen Size less than 400W */
+/* Screen Size less than 400W */
 @media (max-width: 400px) {
 	#top_section {
 	width: 96.5%;
