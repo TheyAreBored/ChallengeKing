@@ -94,6 +94,21 @@ p {
 	}
 }
 
+img#sunrays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 452px;
+    z-index: 0;
+}
+
+
+div#ck_logo, div#ck_logo img, div#fun_challenges_text, div#king_waving_no_hands, div#king_waving_no_hands img, div#app_store_icons {
+	position: relative;
+	z-index: 1;
+}
+
 div#ck_logo {
 	padding-top: 40px;
 }
