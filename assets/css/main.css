@@ -68,7 +68,11 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Neil Custom */
+
+
+
+/* CK CUSTOM CSS */
+/* All Sections CSS */
 p {
   	font-family: "Quicksand", serif;
   	font-optical-sizing: auto;
@@ -77,24 +81,20 @@ p {
   	font-style: normal;
 }
 
-#top_section {
+@media (max-width: 400px) {
+	.all_sections_common_css {
+	width: 96.5%;
+	}
+}
+
+.all_sections_common_css {
     	width: 90%;
-	height: 470px;
     	margin: auto;
     	max-width: 900px;
-    	border-radius: 0px 0px 20px 20px;
-    	background-color: #87CDCA;
-    	text-align: center;
+	text-align: center;
     	position: relative;
     	z-index: 0;
 	overflow: hidden;
-}
-
-/* Screen Size less than 400W */
-@media (max-width: 400px) {
-	#top_section {
-	width: 96.5%;
-	}
 }
 
 img#sunrays {
@@ -104,6 +104,14 @@ img#sunrays {
     	width: 100%;
    	height: 450px;
     	z-index: -1;
+}
+
+
+/* Top Section CSS */
+#top_section {
+	height: 470px;
+    	border-radius: 0px 0px 20px 20px;
+    	background-color: #87CDCA;
 }
 
 #top_section img#sunrays {
@@ -144,7 +152,6 @@ div#app_store_icons {
 	padding-top: 2px;
 }
 
-
 #apple_store_icon {
 	width: 133px;
 	padding-left: 14px;
@@ -152,5 +159,15 @@ div#app_store_icons {
 
 #play_store_icon {
 	width: 152px;
+}
+
+
+/* Quote Section CSS */
+#star_rating {
+	width: 311px;
+}
+
+p #quote_from {
+color: #A6A6A6;
 }
 
