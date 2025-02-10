@@ -70,23 +70,23 @@ input, select, textarea {
 
 /* Neil Custom */
 p {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-size: 19px;
-  font-style: normal;
+  	font-family: "Quicksand", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 800;
+  	font-size: 19px;
+  	font-style: normal;
 }
 
 #top_section {
-    width: 90%;
-    height: 480px;
-    margin: auto;
-    max-width: 900px;
-    border-radius: 0px 0px 20px 20px;
-    background-color: #87CDCA;
-    text-align: center;
-    position: relative;
-    z-index: -2;
+    	width: 90%;
+	    height: 480px;
+    	margin: auto;
+    	max-width: 900px;
+    	border-radius: 0px 0px 20px 20px;
+    	background-color: #87CDCA;
+    	text-align: center;
+    	position: relative;
+    	z-index: -2;
 }
 
 /* Screen Size less than 400W */
@@ -97,12 +97,12 @@ p {
 }
 
 #top_section img#sunrays {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 480px;
-    z-index: -1;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+   	 height: 480px;
+    	z-index: -1;
 }
 
 
@@ -130,7 +130,11 @@ div#king_waving_no_hands {
 }
 
 div#king_waving_no_hands img {
-    width: 179.22px;
+    	width: 179.22px;
+}
+
+div#download_for_free {
+	padding-top: 5px;
 }
 
 div#download_for_free img {
@@ -143,11 +147,10 @@ div#app_store_icons {
 
 #apple_store_icon {
 	width: 133px;
+	padding-left: 25px;
 }
 
 #play_store_icon {
 	width: 152px;
 }
-
-
 
