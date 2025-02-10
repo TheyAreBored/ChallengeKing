@@ -85,6 +85,7 @@ p {
     border-radius: 0px 0px 20px 20px;
     background-color: #87CDCA;
     text-align: center;
+    z-index: -2;
 }
 
 /* Screen Size less than 400W */
@@ -100,14 +101,15 @@ img#sunrays {
     left: 0;
     width: 100%;
     height: 452px;
-    z-index: 0;
+    z-index: -1;
 }
 
 
+/*
 div#ck_logo, div#ck_logo img, div#fun_challenges_text, div#king_waving_no_hands, div#king_waving_no_hands img, div#app_store_icons {
 	position: relative;
-	z-index: 1;
 }
+*/
 
 div#ck_logo {
 	padding-top: 40px;
@@ -130,12 +132,21 @@ div#king_waving_no_hands img {
     width: 179.22px;
 }
 
+div#download_for_free img {
+	width: 154px;
+}
+
 div#app_store_icons {
 	padding-top: 8px;
 }
 
+#apple_store_icon {
+	width: 133px;
+}
 
-
+#play_store_icon {
+	width: 152px;
+}
 
 
 
