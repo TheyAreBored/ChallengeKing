@@ -172,7 +172,7 @@ div#app_store_icons {
 
 p#quote {
 	padding-top: 5px;
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 600;
 	max-width: 380px;
 	display: inline-block;
@@ -181,8 +181,8 @@ p#quote {
 p#quote_from {
     	color: #A6A6A6;
     	padding-top: 10px;
-    	font-size: 17px;
-    	font-weight: 700;
+    	font-size: 16px;
+    	font-weight: 600;
 }
 
 
