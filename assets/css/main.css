@@ -86,7 +86,7 @@ p {
     	background-color: #87CDCA;
     	text-align: center;
     	position: relative;
-    	z-index: -2;
+    	z-index: 0;
 	overflow: hidden;
 }
 
