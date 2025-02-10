@@ -188,10 +188,14 @@ p#quote_from {
 
 /* Share Section CSS */
 div#share_section {
-	width: 400px;
-	max-width: 400px;
-	border-radius: 20px;
-	border: 1px solid #5F9E9C;
+    width: 400px;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 1px solid #5F9E9C;
+    display: block;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 @media (max-width: 400px) {
