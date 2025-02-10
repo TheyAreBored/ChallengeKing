@@ -79,7 +79,7 @@ p {
 
 #top_section {
     	width: 90%;
-	    height: 480px;
+	height: 470px;
     	margin: auto;
     	max-width: 900px;
     	border-radius: 0px 0px 20px 20px;
@@ -87,6 +87,7 @@ p {
     	text-align: center;
     	position: relative;
     	z-index: -2;
+	overflow: hidden;
 }
 
 /* Screen Size less than 400W */
@@ -96,21 +97,18 @@ p {
 	}
 }
 
-#top_section img#sunrays {
+img#sunrays {
     	position: absolute;
     	top: 0;
     	left: 0;
     	width: 100%;
-   	 height: 480px;
+   	height: 450px;
     	z-index: -1;
 }
 
-
-/*
-div#ck_logo, div#ck_logo img, div#fun_challenges_text, div#king_waving_no_hands, div#king_waving_no_hands img, div#app_store_icons {
-	position: relative;
+#top_section img#sunrays {
+   	height: 470px;
 }
-*/
 
 div#ck_logo {
 	padding-top: 30px;
@@ -142,7 +140,7 @@ div#download_for_free img {
 }
 
 div#app_store_icons {
-	padding-top: 8px;
+	padding-top: 2px;
 }
 
 #apple_store_icon {
