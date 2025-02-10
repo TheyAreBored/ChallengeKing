@@ -124,7 +124,7 @@ div#fun_challenges_text {
 
 div#king_waving_no_hands {
 	padding-top: 18px;
-	padding-left: 53px;
+	padding-left: 45px;
 }
 
 div#king_waving_no_hands img {
@@ -137,6 +137,7 @@ div#download_for_free {
 
 div#download_for_free img {
 	width: 154px;
+	padding-right: 7px;
 }
 
 div#app_store_icons {
@@ -146,7 +147,7 @@ div#app_store_icons {
 
 #apple_store_icon {
 	width: 133px;
-	padding-left: 24px;
+	padding-left: 14px;
 }
 
 #play_store_icon {
