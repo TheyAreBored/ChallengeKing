@@ -188,14 +188,15 @@ p#quote_from {
 
 /* Share Section CSS */
 div#share_section {
-    width: 400px;
-    max-width: 400px;
-    border-radius: 20px;
-    border: 1px solid #5F9E9C;
-    display: block;
-    height: 150px;
-    margin: auto;
-    margin-top: 20px;
+    	width: 400px;
+    	max-width: 400px;
+    	border-radius: 20px;
+    	border: 1px solid #5F9E9C;
+    	display: block;
+    	height: 150px;
+    	margin: auto;
+    	margin-top: 20px;
+	text-align: center;
 }
 
 @media (max-width: 400px) {
@@ -203,4 +204,10 @@ div#share_section {
 	width: 96.5%;
 	min-width: 300px;
 	}
+}
+
+p#follow_and_share_text {
+    font-size: 19px;
+    color: #5F9E9C;
+    padding-top: 10px;
 }
