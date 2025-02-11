@@ -290,3 +290,46 @@ img#squirrel_with_tongue {
     	bottom: 0;
     	right: 40px;
 }
+
+
+/* 45 Challenges Section */
+div#45_challenges_section {
+	height: 450px;
+    	background-color: #5F9E9C;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+div#45_challenges_images {
+	position: relative;
+	width: 337px;
+	margin: 0px auto;
+	top: 28px;
+}
+
+img#45_challenges_text {
+    	width: 337px;    	
+}
+
+img#your_challenges_phone {
+    	width: 118px;
+    	position: absolute;
+   	bottom: 0;
+    	left: 48px;
+}
+
+img#roll_on_phone {
+    	width: 118px;
+    	position: absolute;
+    	bottom: 0;
+    	right: 40px;
+}
+
+img#toilet_roll {
+    	width: 91.56px;
+    	position: absolute;
+    	bottom: 0;
+    	right: 40px;
+}
+
+
