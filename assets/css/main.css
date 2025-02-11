@@ -315,22 +315,22 @@ img#forty_five_challenges_text {
 img#your_challenges_phone {
     	width: 118px;
     	position: absolute;
-   	bottom: 0;
+   	top: 148px;
     	left: 48px;
 }
 
 img#roll_on_phone {
     	width: 118px;
     	position: absolute;
-    	bottom: 0;
+    	top: 148px;
     	right: 40px;
 }
 
 img#toilet_roll {
     	width: 91.56px;
     	position: absolute;
-    	bottom: 0;
-    	right: 40px;
+    	top: 110px;
+    	right: 6px;
 }
 
 
