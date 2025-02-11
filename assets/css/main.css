@@ -85,6 +85,9 @@ p {
     	width: 90%;
     	margin: auto;
     	max-width: 900px;
+	height: 450px;
+	border-radius: 20px;
+    	background-color: #87CDCA;
 	text-align: center;
     	position: relative;
     	z-index: 0;
@@ -109,23 +112,23 @@ img#sunrays {
 }
 
 .hidden {
-    position: relative;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0s linear; /* No animation, controlled by scroll */
+    	position: relative;
+    	opacity: 0; /* Initially hidden */
+    	transition: opacity 0s linear; /* No animation, controlled by scroll */
 }
 
 .fly-in-left,
 .fly-in-right {
-    opacity: 0;
-    transition: opacity 0s linear, transform 0s linear;
+    	opacity: 0;
+	    transition: opacity 0s linear, transform 0s linear;
 }
 
 .fly-in-left {
-    transform: translateX(-100%);
+    	transform: translateX(-100%);
 }
 
 .fly-in-right {
-    transform: translateX(100%);
+    	transform: translateX(100%);
 }
 
 
@@ -133,7 +136,6 @@ img#sunrays {
 #top_section {
 	height: 470px;
     	border-radius: 0px 0px 20px 20px;
-    	background-color: #87CDCA;
 }
 
 #top_section img#sunrays {
@@ -256,3 +258,12 @@ img#tiktok_logo {
 img#facebook_logo {
     	padding-right: 15px;
 }
+
+/* Are You Fit Enough Section */
+#fit_enough_section {
+	height: 470px;
+    	border-radius: 0px 0px 20px 20px;
+    	background-color: #87CDCA;
+}
+
+
