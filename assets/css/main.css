@@ -298,6 +298,7 @@ div#45_challenges_section {
     	background-color: #5F9E9C;
 	border-radius: 20px;
 	margin-top: 20px;
+	margin-bottom: 200px; /*REMOVE*/
 }
 
 div#45_challenges_images {
