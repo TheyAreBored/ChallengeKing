@@ -108,6 +108,26 @@ img#sunrays {
     	z-index: -1;
 }
 
+.hidden {
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0s linear; /* No animation, controlled by scroll */
+}
+
+.fly-in-left,
+.fly-in-right {
+    opacity: 0;
+    transition: opacity 0s linear, transform 0s linear;
+}
+
+.fly-in-left {
+    transform: translateX(-100%);
+}
+
+.fly-in-right {
+    transform: translateX(100%);
+}
+
 
 /* Top Section CSS */
 #top_section {
