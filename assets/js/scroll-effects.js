@@ -1,68 +1,42 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".hidden") // Each wrapper div
-  const windowHeight = window.innerHeight
+    const sections = document.querySelectorAll(".hidden"); // Each wrapper div
+    const images = document.querySelectorAll(".fly-in-left, .fly-in-right"); // Image elements
 
-  function updateElements() {
-    const scrollTop = window.scrollY
+    function updateElements() {
+        const windowHeight = window.innerHeight;
 
-    sections.forEach((section) => {
-      const rect = section.getBoundingClientRect()
-      const elementHeight = rect.height
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            
+            // Progress: 0 when fully out of view, 1 when 40% into the div
+            let progress = (windowHeight - rect.top) / (windowHeight * 0.4);
+            progress = Math.min(Math.max(progress, 0), 1); 
 
-      // Progress: 0 when fully out of view (below), 1 when 40% through div
-      let progress = (windowHeight - rect.top) / (windowHeight * 0.4)
-      progress = Math.min(Math.max(progress, 0), 1) // Keep within 0-1 range
+            section.style.opacity = progress; // Fade in wrapper div
 
-      // Ensure full opacity & no movement when fully in view
-      if (rect.top >= 0 && rect.bottom <= windowHeight) {
-        progress = 1
-      }
+            section.querySelectorAll(".fly-in-left, .fly-in-right").forEach(el => {
+                el.style.opacity = progress;
+                el.style.transform = `translateX(${(1 - progress) * (el.classList.contains("fly-in-left") ? -100 : 100)}%)`;
+            });
+        });
 
-      // Apply transformations
-      section.style.opacity = progress
+        // Handle images separately to delay their animation until visible
+        images.forEach(img => {
+            const rect = img.getBoundingClientRect();
 
-      section.querySelectorAll(".fly-in-left").forEach((el) => {
-        el.style.opacity = progress
-        el.style.transform = `translateX(${(1 - progress) * -100}%)`
-      })
+            // Only animate when the image is at least 40% visible
+            if (rect.top < windowHeight * 0.6) {
+                img.style.opacity = 1;
+                img.style.transform = "translateX(0)";
+            }
+        });
+    }
 
-      section.querySelectorAll(".fly-in-right").forEach((el) => {
-        el.style.opacity = progress
-        el.style.transform = `translateX(${(1 - progress) * 100}%)`
-      })
-    })
-  }
+    function animateOnLoad() {
+        setTimeout(updateElements, 50);
+    }
 
-  function animateOnLoad() {
-    sections.forEach((section, index) => {
-      const rect = section.getBoundingClientRect()
-
-      if (rect.top < windowHeight) {
-        // Apply transition instantly for visible sections
-        section.style.transition =
-          "opacity 0.6s ease-out, transform 1s ease-out"
-        section.style.opacity = 1
-        section.style.transform = "translateX(0)" // Reset position
-
-        section.querySelectorAll(".fly-in-left").forEach((el) => {
-          el.style.transition = "opacity 0.6s ease-out, transform 1s ease-out"
-          el.style.opacity = 1
-          el.style.transform = "translateX(0)"
-        })
-
-        section.querySelectorAll(".fly-in-right").forEach((el) => {
-          el.style.transition = "opacity 0.6s ease-out, transform 1s ease-out"
-          el.style.opacity = 1
-          el.style.transform = "translateX(0)"
-        })
-      }
-    })
-  }
-
-  // Run the on-load animation
-  animateOnLoad()
-
-  // Run scroll-based animations
-  window.addEventListener("scroll", updateElements)
-  updateElements() // Run on load to set initial positions
-})
+    animateOnLoad();
+    window.addEventListener("scroll", updateElements);
+    window.addEventListener("resize", updateElements);
+});
