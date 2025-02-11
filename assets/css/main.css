@@ -210,11 +210,18 @@ div#share_section {
 p#follow_and_share_text, p#share_hashtag {
     	font-size: 18px;
     	color: #5F9E9C;
-    	padding-top: 10px;
+}
+
+p#follow_and_share_text {
+    	padding-top: 19px;
+}
+
+p#share_hashtag {
+    	padding-top: 11px;
 }
 
 div#social_sharing_icons {
-    padding-top: 15px;
+    padding-top: 12px;
 }
 
 div#social_sharing_icons img {
