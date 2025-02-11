@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Animate wrapper divs
         sections.forEach(section => {
             const rect = section.getBoundingClientRect();
-            let progress = (windowHeight - rect.top) / (windowHeight * 0.4);
+            let progress = (windowHeight - rect.top) / (windowHeight * 0.3);
             progress = Math.min(Math.max(progress, 0), 1);
 
             section.style.opacity = progress; // Fade in wrapper div
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Animate images separately when they enter viewport
         images.forEach(img => {
             const rect = img.getBoundingClientRect();
-            const imgProgress = (windowHeight - rect.top) / (windowHeight * 0.4);
+            const imgProgress = (windowHeight - rect.top) / (windowHeight * 0.3);
             const isVisible = rect.top < windowHeight * 0.4; // 60% into viewport
 
             if (isVisible) {
