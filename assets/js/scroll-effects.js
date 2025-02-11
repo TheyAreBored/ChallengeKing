@@ -40,18 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
       if (rect.top < windowHeight) {
         // Apply transition instantly for visible sections
         section.style.transition =
-          "opacity 0.6s ease-out, transform 0.6s ease-out"
+          "opacity 0.6s ease-out, transform 1s ease-out"
         section.style.opacity = 1
         section.style.transform = "translateX(0)" // Reset position
 
         section.querySelectorAll(".fly-in-left").forEach((el) => {
-          el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out"
+          el.style.transition = "opacity 0.6s ease-out, transform 1s ease-out"
           el.style.opacity = 1
           el.style.transform = "translateX(0)"
         })
 
         section.querySelectorAll(".fly-in-right").forEach((el) => {
-          el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out"
+          el.style.transition = "opacity 0.6s ease-out, transform 1s ease-out"
           el.style.opacity = 1
           el.style.transform = "translateX(0)"
         })
