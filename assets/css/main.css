@@ -166,7 +166,8 @@ div#app_store_icons {
 
 /* Quote Section CSS */
 #star_rating img {
-    	width: 270px;
+    	width: 250px;
+    	padding-right: 1px;
     	padding-top: 25px;
 }
 
