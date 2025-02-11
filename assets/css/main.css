@@ -213,6 +213,18 @@ p#follow_and_share_text {
     	padding-top: 10px;
 }
 
+div#social_sharing_icons {
+    padding-top: 15px;
+}
+
 div#social_sharing_icons img {
 	width: 50px;
+}
+
+img#tiktok_logo {
+    	padding-left: 15px;
+}
+
+img#facebook_logo {
+    	padding-right: 15px;
 }
