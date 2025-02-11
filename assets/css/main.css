@@ -207,7 +207,7 @@ div#share_section {
     }
 }
 
-p#follow_and_share_text {
+p#follow_and_share_text, p#share_hashtag {
     	font-size: 18px;
     	color: #5F9E9C;
     	padding-top: 10px;
