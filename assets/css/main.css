@@ -293,7 +293,7 @@ img#squirrel_with_tongue {
 
 
 /* 45 Challenges Section */
-div#45_challenges_section {
+div#forty_five_challenges_section {
 	height: 450px;
     	background-color: #5F9E9C;
 	border-radius: 20px;
@@ -301,14 +301,14 @@ div#45_challenges_section {
 	margin-bottom: 200px; /*REMOVE*/
 }
 
-div#45_challenges_images {
+div#forty_five_challenges_images {
 	position: relative;
 	width: 337px;
 	margin: 0px auto;
 	top: 28px;
 }
 
-img#45_challenges_text {
+img#forty_five_challenges_text {
     	width: 337px;    	
 }
 
