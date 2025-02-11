@@ -192,7 +192,7 @@ div#share_section {
     	width: 400px;
     	max-width: 400px;
     	border-radius: 20px;
-    	border: 1px solid #5F9E9C;
+    	border: 1.5px dashed #5F9E9C;
     	display: block;
     	height: 150px;
     	margin: auto;
