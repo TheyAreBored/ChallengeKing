@@ -259,8 +259,30 @@ img#facebook_logo {
 }
 
 /* Are You Fit Enough Section */
-#fit_enough_section {
+div#fit_enough_section {
 	height: 450px;
     	background-color: #87CDCA;
 	border-radius: 20px;
+	margin-top: 20px;
+}
+
+div#castle_with_text {
+	width: 337px;
+	position: relative;
+	margin: auto;
+	top: 0px;
+}
+
+div#squirrel_with_stinkbomb {
+	width: 80px;
+	position: relative;
+	margin: auto;
+	bottom: 0px;
+}
+
+div#squirrel_with_tongue {
+	width: 79px;
+	position: relative;
+	margin: auto;
+	bottom: 0px;
 }
