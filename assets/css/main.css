@@ -114,10 +114,10 @@ img#sunrays {
     	transition: opacity 0s linear; /* No animation, controlled by scroll */
 }
 
-.fly-in-left,
-.fly-in-right {
+fly-in-left, .fly-in-right {
+    	transition: transform 1.2s ease-out, opacity 1.2s ease-out; /* Slower, smooth easing */
     	opacity: 0;
-	    transition: opacity 0s linear, transform 0s linear;
+    	will-change: transform, opacity; /* Optimizes animation performance */
 }
 
 .fly-in-left {
