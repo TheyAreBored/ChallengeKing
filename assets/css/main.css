@@ -208,7 +208,11 @@ div#share_section {
 }
 
 p#follow_and_share_text {
-    font-size: 18px;
-    color: #5F9E9C;
-    padding-top: 10px;
+    	font-size: 18px;
+    	color: #5F9E9C;
+    	padding-top: 10px;
+}
+
+div#social_sharing_icons img {
+	width: 50px;
 }
