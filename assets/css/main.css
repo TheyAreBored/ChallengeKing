@@ -167,15 +167,15 @@ div#app_store_icons {
 /* Quote Section CSS */
 #star_rating img {
     	width: 270px;
-    	padding-top: 5px;
+    	padding-top: 25px;
 }
 
 p#quote {
-	padding-top: 5px;
-	font-size: 16px;
-	font-weight: 600;
-	max-width: 380px;
-	display: inline-block;
+    	padding-top: 5px;
+    	font-size: 16px;
+    	font-weight: 600;
+    	max-width: 360px;
+    	display: inline-block;
 }
 
 p#quote_from {
@@ -195,15 +195,16 @@ div#share_section {
     	display: block;
     	height: 150px;
     	margin: auto;
-    	margin-top: 20px;
+    	margin-top: 30px;
 	text-align: center;
 }
 
 @media (max-width: 400px) {
-	div#share_section {
-	width: 96.5%;
-	min-width: 300px;
-	}
+    div#share_section {
+        	width: 96.5%;
+        	min-width: 300px;
+        	max-width: 300px;
+    }
 }
 
 p#follow_and_share_text {
