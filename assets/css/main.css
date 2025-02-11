@@ -278,15 +278,15 @@ img#castle_with_text {
 }
 
 img#squirrel_with_stinkbomb {
-	width: 80px;
-	position: relative;
-	margin: auto;
-	bottom: 0px;
+    	width: 80px;
+    	position: absolute;
+   	bottom: 0;
+    	left: 48px;
 }
 
 img#squirrel_with_tongue {
-	width: 79px;
-	position: relative;
-	margin: auto;
-	bottom: 0px;
+    	width: 79px;
+    	position: absolute;
+    	bottom: 0;
+    	right: 40px;
 }
