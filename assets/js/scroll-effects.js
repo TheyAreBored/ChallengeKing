@@ -1,33 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".hidden"); // Each wrapper div
-    const images = document.querySelectorAll(".fly-in-left, .fly-in-right"); // Image elements
+    const sections = document.querySelectorAll(".hidden"); // Wrapper divs
+    const images = document.querySelectorAll(".fly-in-left, .fly-in-right"); // Images
 
     function updateElements() {
         const windowHeight = window.innerHeight;
 
+        // Animate wrapper divs
         sections.forEach(section => {
             const rect = section.getBoundingClientRect();
-            
-            // Progress: 0 when fully out of view, 1 when 40% into the div
             let progress = (windowHeight - rect.top) / (windowHeight * 0.4);
-            progress = Math.min(Math.max(progress, 0), 1); 
+            progress = Math.min(Math.max(progress, 0), 1);
 
             section.style.opacity = progress; // Fade in wrapper div
-
-            section.querySelectorAll(".fly-in-left, .fly-in-right").forEach(el => {
-                el.style.opacity = progress;
-                el.style.transform = `translateX(${(1 - progress) * (el.classList.contains("fly-in-left") ? -100 : 100)}%)`;
-            });
         });
 
-        // Handle images separately to delay their animation until visible
+        // Animate images separately when they enter viewport
         images.forEach(img => {
             const rect = img.getBoundingClientRect();
+            const imgProgress = (windowHeight - rect.top) / (windowHeight * 0.4);
+            const isVisible = rect.top < windowHeight * 0.6; // 60% into viewport
 
-            // Only animate when the image is at least 40% visible
-            if (rect.top < windowHeight * 0.6) {
+            if (isVisible) {
                 img.style.opacity = 1;
                 img.style.transform = "translateX(0)";
+            } else {
+                img.style.opacity = Math.min(Math.max(imgProgress, 0), 1);
+                img.style.transform = `translateX(${(1 - imgProgress) * (img.classList.contains("fly-in-left") ? -100 : 100)}%)`;
             }
         });
     }
