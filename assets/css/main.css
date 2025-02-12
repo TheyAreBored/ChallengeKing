@@ -284,6 +284,13 @@ div#app_store_icons {
   padding: 10px 20px; /* Prevents text from touching the edges */
 }
 
+
+@media (max-width: 400px) {
+	.quote-wrapper {
+		max-width: 350px;
+	}
+}
+
 .quote-wrapper.active {
   opacity: 1;
 }
