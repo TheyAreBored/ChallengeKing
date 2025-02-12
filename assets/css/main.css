@@ -409,7 +409,7 @@ div#crown_jewels_section {
 	height: 450px;
     	background-color: #87CDCA;
 	border-radius: 20px;
-	padding-bottom: 250px; /* REMOVE THIS */
+	margin-bottom: 250px; /* REMOVE THIS */
 	margin-top: 20px;
 }
 
@@ -427,13 +427,13 @@ img#crown_jewels_text_and_screen {
 img#crown_jewels_left {
     	width: 50px;
     	position: absolute;
-   	top: 148px;
-    	left: 48px;
+   	top: 161px;
+    	left: 22px;
 }
 
 img#crown_jewels_right {
     	width: 50px;
     	position: absolute;
-    	top: 148px;
-    	right: 40px;
+    	top: 161px;
+    	right: 26px;
 }
