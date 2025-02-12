@@ -187,19 +187,17 @@ div#app_store_icons {
 /* Quote Section CSS */
 
 /* Stars */
-
 .parent-container {
   padding-top: 25px;
   display: flex;
   justify-content: center; /* Centers the stars */
   align-items: center;
-  gap: 10px; /* Adjust spacing between stars */
+  gap: 8px; /* Adjust spacing between stars */
 }
 
-
 .star-wrapper {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1.2s ease-in-out;
@@ -217,17 +215,18 @@ div#app_store_icons {
         21% 91%, 32% 57%, 2% 35%, 
         39% 35%
     );
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3), 
-                inset 0px 0px 7px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 
+                inset 0px 0px 5px rgba(0, 0, 0, 0.6);
 }
 
+/* Star-shaped shadow */
 .star-shadow {
     position: absolute;
-    width: 50px;  /* Slightly larger than the star */
-    height: 50px; /* Slightly larger than the star */
-    background: rgba(1, 1, 1, 0.05); /* Soft shadow color */
+    width: 42px;  /* Slightly larger than the star */
+    height: 42px; /* Slightly larger than the star */
+    background: rgba(1, 1, 1, 0.03); /* Soft shadow color */
     border-radius: 50%; /* Softens edges */
-    filter: blur(10px); /* Creates a smooth glow effect */
+    filter: blur(8px); /* Creates a smooth glow effect */
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
