@@ -186,11 +186,83 @@ div#app_store_icons {
 
 /* Quote Section CSS */
 
+/* Stars */
+
+.parent-container {
+  padding-top: 250px;
+  display: flex;
+  justify-content: center; /* Centers the stars */
+  align-items: center;
+  gap: 10px; /* Adjust spacing between stars */
+}
+
+
+.star-wrapper {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.2s ease-in-out;
+}
+
+/* Define the star shape with a cutout */
+.star {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background: linear-gradient(135deg, #5F9E9C, #87CDCA);
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 
+        68% 57%, 79% 91%, 50% 70%, 
+        21% 91%, 32% 57%, 2% 35%, 
+        39% 35%
+    );
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3), 
+                inset 0px 0px 7px rgba(0, 0, 0, 0.6);
+}
+
+.star-shadow {
+    position: absolute;
+    width: 50px;  /* Slightly larger than the star */
+    height: 50px; /* Slightly larger than the star */
+    background: rgba(1, 1, 1, 0.05); /* Soft shadow color */
+    border-radius: 50%; /* Softens edges */
+    filter: blur(10px); /* Creates a smooth glow effect */
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Places it behind the star */
+}
+
+/* Adjust the cutout in the center */
+.star::after {
+  content: "";
+  position: absolute;
+  width: 50%; /* Slightly smaller proportion */
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  background: white;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  );
+}
+
+/* Back face for 3D effect */
+.back {
+  transform: translateZ(-1px);
+}
+
+/*
 #star_rating img {
     	width: 250px;
     	padding-right: 1px;
     	padding-top: 25px;
 }
+*/
 
 p#quote {
     	padding-top: 5px;
