@@ -187,8 +187,8 @@ div#app_store_icons {
 /* Quote Section CSS */
 
 /* Stars */
-.parent-container {
-  padding-top: 25px;
+.star-parent-container {
+  padding-top: 30px;
   display: flex;
   justify-content: center; /* Centers the stars */
   align-items: center;
@@ -378,7 +378,7 @@ p#app_quote {
 
 p#app_quote_from {
     	color: #A6A6A6;
-    	padding-top: 10px;
+    	padding-top: 2px;
     	font-size: 16px;
     	font-weight: 600;
 }
