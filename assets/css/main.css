@@ -440,7 +440,7 @@ img#crown_jewels_right {
 
 /* App Icon Section */
 div#app_icon_section {
-	height: 190px;
+	height: 175px;
     	background-color: white;
 	border: 3px solid #87CDCA;
 	border-radius: 20px;
@@ -449,8 +449,8 @@ div#app_icon_section {
 }
 
 p#download_all_devices_text {
-	color: #A6A6A6;
-    	padding-top: 10px;
+    	color: #5F9E9C;
+    	padding-top: 16px;
     	font-size: 16px;
     	font-weight: 600;
 }
