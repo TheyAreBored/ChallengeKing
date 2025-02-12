@@ -134,9 +134,23 @@
 		<!--Start of App Icon Section-->
 		<div id="app_icon_section" class="all_sections_common_css hidden">
 			<p id="download_all_devices_text" class="fly-in-left">Download For All<br>Apple & Andriod Devices Today!</p>
-			<img id="ck_app_icon" class="fly-in-right" src="images/ck_app_icon.png" alt="Challenge King App Icon">
+			<img id="ck_app_icon" class="fly-in-right scroll-to-top" src="images/ck_app_icon.png" alt="Challenge King App Icon">
 		<!--End of App Icon Section-->
 		</div>
+
+		<!--Scroll To Top Script-->
+		<script>
+		    const scrollToTopDiv = document.querySelector('.scroll-to-top');
+		
+		    scrollToTopDiv.addEventListener('click', () => {
+		      window.scrollTo({
+		        top: 0,
+		        behavior: 'smooth' // Adds a smooth scroll effect
+		      });
+		    });
+		  </script>
+		
+		<!--End of App Icon Section-->
 
 
 		<!--CK Scroll Effect JS-->
