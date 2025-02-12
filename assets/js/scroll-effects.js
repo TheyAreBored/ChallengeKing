@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         images.forEach(img => {
             const rect = img.getBoundingClientRect();
             const imgProgress = (windowHeight - rect.top) / (windowHeight * 0.4);
-            const isVisible = rect.top < windowHeight * 0.9; // 60% into viewport
+            const isVisible = rect.top < windowHeight * 0.95; // 60% into viewport
 
             if (isVisible) {
                 img.style.opacity = 1;
