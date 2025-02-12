@@ -409,7 +409,6 @@ div#crown_jewels_section {
 	height: 450px;
     	background-color: #87CDCA;
 	border-radius: 20px;
-	margin-bottom: 250px; /* REMOVE THIS */
 	margin-top: 20px;
 }
 
@@ -427,13 +426,37 @@ img#crown_jewels_text_and_screen {
 img#crown_jewels_left {
     	width: 50px;
     	position: absolute;
-   	top: 161px;
+    	top: 161px;
     	left: 22px;
 }
 
 img#crown_jewels_right {
     	width: 50px;
     	position: absolute;
-    	top: 161px;
-    	right: 26px;
+    	top: 157px;
+    	right: 23px;
 }
+
+
+/* App Icon Section */
+div#app_icon_section {
+	height: 190px;
+    	background-color: white;
+	border: 3px solid #87CDCA;
+	border-radius: 20px;
+	margin-bottom: 250px; /* REMOVE THIS */
+	margin-top: 20px;
+}
+
+p#download_all_devices_text {
+	color: #A6A6A6;
+    	padding-top: 10px;
+    	font-size: 16px;
+    	font-weight: 600;
+}
+
+img#ck_app_icon {
+    	width: 95px;    
+	padding-top: 10px;
+}
+
