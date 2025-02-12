@@ -1,48 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Grab our quote wrappers and navigation buttons.
   const quotes = document.querySelectorAll(".quote-wrapper");
+  const slider = document.querySelector(".quote-slider");
   const prevBtn = document.getElementById("prev-quote");
   const nextBtn = document.getElementById("next-quote");
-
   let index = 0;
   let interval = null;
   const slideDuration = 7000; // 7 seconds
 
-  // Function to show the quote at the new index.
   function showQuote(newIndex) {
     quotes[index].classList.remove("active");
     index = (newIndex + quotes.length) % quotes.length;
     quotes[index].classList.add("active");
+    adjustContainerHeight();
   }
 
-  // Functions to move to next or previous quote.
   function nextQuote() {
     showQuote(index + 1);
   }
+
   function prevQuote() {
     showQuote(index - 1);
   }
 
-  // Start auto sliding if not already running.
   function startSlider() {
     if (!interval) {
       interval = setInterval(nextQuote, slideDuration);
     }
   }
 
-  // Stop auto sliding and clear the interval.
   function stopSlider() {
     clearInterval(interval);
     interval = null;
   }
 
-  // Reset the timer: stop any current timer then start a new one.
   function resetAutoSlide() {
     stopSlider();
     startSlider();
   }
 
-  // Intersection observer to pause slider when out of view.
+  // Adjust container height based on the active quote's height.
+  function adjustContainerHeight() {
+    const activeSlide = document.querySelector(".quote-wrapper.active");
+    if (activeSlide) {
+      slider.style.height = activeSlide.offsetHeight + "px";
+    }
+  }
+
+  // Pause the slider if the container is not in the viewport.
   const observer = new IntersectionObserver(
     (entries) => {
       const isVisible = entries[0].isIntersecting;
@@ -56,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   observer.observe(document.querySelector(".quote-container"));
 
-  // Swipe detection on touch devices.
+  // Swipe detection for touch devices.
   let startX = 0;
   const swipeThreshold = 50;
 
@@ -67,9 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!startX) return;
     let diffX = startX - e.touches[0].clientX;
     if (Math.abs(diffX) > swipeThreshold) {
-      // If swiped left, go to next; if right, previous.
       diffX > 0 ? nextQuote() : prevQuote();
-      startX = 0; // reset for this gesture
+      startX = 0;
       resetAutoSlide();
     }
   }
@@ -77,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   container.addEventListener("touchstart", handleTouchStart);
   container.addEventListener("touchmove", handleTouchMove);
 
-  // Click listeners for the arrow buttons.
+  // Arrow click listeners.
   prevBtn.addEventListener("click", () => {
     prevQuote();
     resetAutoSlide();
@@ -87,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
     resetAutoSlide();
   });
 
-  // Start with the first quote visible and kick off auto-slide.
+  // Initialize: show first quote and adjust container height.
   quotes[index].classList.add("active");
+  adjustContainerHeight();
   startSlider();
 });
