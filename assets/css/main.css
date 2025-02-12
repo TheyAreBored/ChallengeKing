@@ -255,15 +255,117 @@ div#app_store_icons {
   transform: translateZ(-1px);
 }
 
-/*
-#star_rating img {
-    	width: 250px;
-    	padding-right: 1px;
-    	padding-top: 25px;
-}
-*/
 
-p#quote {
+/*Quotes Slider CSS*/
+.quote-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  height: 180px; /* Increased height to accommodate both quote & author */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+  padding: 0 50px; /* Ensures text does not overlap arrows */
+}
+
+.quote-wrapper {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Prevents text from touching the edges */
+}
+
+.quote-wrapper.active {
+  opacity: 1;
+}
+
+.quote {
+  font-size: 1.5rem;
+  max-width: 80%; /* Prevents text from being too wide */
+  line-height: 1.4;
+}
+
+.author {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Common styles for both arrow buttons */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+  width: 0;
+  height: 0;
+}
+
+/* RIGHT ARROW (Next Button) */
+#next-quote {
+  right: 12px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid #87CDCA;
+  position: absolute;
+}
+
+#next-quote::after {
+  content: "";
+  position: absolute;
+  left: -32px;  /* Adjusts inner triangle horizontally */
+  top: -16px;   /* Centers vertically */
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 24px solid white;
+}
+
+/* LEFT ARROW (Previous Button) */
+#prev-quote {
+  left: 12px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 20px solid #87CDCA;
+  position: absolute;
+}
+
+#prev-quote::after {
+  content: "";
+  position: absolute;
+  right: -32px;  /* Mirror the offset used for #next-quote */
+  top: -16px;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 24px solid white;
+}
+
+/* Hover effect for both */
+.nav-button:hover {
+  opacity: 0.8;
+}
+
+
+p#app_quote {
     	padding-top: 5px;
     	font-size: 16px;
     	font-weight: 600;
@@ -271,7 +373,7 @@ p#quote {
     	display: inline-block;
 }
 
-p#quote_from {
+p#app_quote_from {
     	color: #A6A6A6;
     	padding-top: 10px;
     	font-size: 16px;
