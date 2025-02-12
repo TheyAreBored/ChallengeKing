@@ -189,7 +189,7 @@ div#app_store_icons {
 /* Stars */
 
 .parent-container {
-  padding-top: 250px;
+  padding-top: 25px;
   display: flex;
   justify-content: center; /* Centers the stars */
   align-items: center;
@@ -207,8 +207,8 @@ div#app_store_icons {
 
 /* Define the star shape with a cutout */
 .star {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     background: linear-gradient(135deg, #5F9E9C, #87CDCA);
     clip-path: polygon(
