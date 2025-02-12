@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Animate images separately when they enter viewport
         images.forEach(img => {
             const rect = img.getBoundingClientRect();
-            const imgProgress = (windowHeight - rect.top) / (windowHeight * 0.4);
+            const imgProgress = (windowHeight - rect.top) / (windowHeight * 0.3);
             const isVisible = rect.top < windowHeight * 0.7; // 60% into viewport
 
             if (isVisible) {
