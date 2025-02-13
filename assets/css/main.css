@@ -589,15 +589,19 @@ main {
   border-radius: 20px 20px 0 0;
   color: white;
   box-sizing: border-box;
-  margin-top: 20px;
 }
 
 /* Footer Column (default: 4‑column layout) */
 .footer-column {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 10px;
+  padding-top: 30px;
+  padding-bottom: 25px;
   box-sizing: border-box;
+}
+
+.footer-column-content-wrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
 }
 
 /* 4‑column layout: vertical dividers (right borders) on columns 1-3 */
