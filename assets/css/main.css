@@ -640,11 +640,16 @@ main {
 }
 
 /* Footer icons */
-.footer-icon {
-  width: 40px;
-  height: auto;
+img.footer-icon {
   margin-bottom: 10px;
-  filter: invert(1); /* Makes icons white */
+}
+
+img.icon_square {
+width: 60px;
+}
+
+img#qr_code {
+width: 100px;
 }
 
 /* Footer links */
