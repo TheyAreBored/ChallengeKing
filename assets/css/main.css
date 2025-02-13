@@ -598,11 +598,13 @@ main {
   box-sizing: border-box;
 }
 
+/*
 .footer-column-content-wrapper {
     position: absolute;
     bottom: 10px;
     left: 25%;
 }
+*/
 
 /* 4‑column layout: vertical dividers (right borders) on columns 1-3 */
 .footer-column:not(:nth-child(4n)) {
