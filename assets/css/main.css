@@ -589,7 +589,7 @@ main {
   border-radius: 20px 20px 0 0;
   color: white;
   box-sizing: border-box;
-  margin-top: auto; /* Push footer to bottom if content is short */
+  margin-top: 20px;
 }
 
 /* Footer Column (default: 4‑column layout) */
@@ -627,7 +627,6 @@ main {
     grid-template-columns: 1fr; /* Single column */
     width: 96.5%; /* Remains 96.5% width */
     min-width: 300px;
-    max-width: 300px;
   }
   /* Remove vertical borders and add bottom border to all except last */
   .footer-column {
