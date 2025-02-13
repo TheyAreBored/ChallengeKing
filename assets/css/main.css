@@ -569,3 +569,92 @@ img#ck_app_icon {
 	padding-top: 10px;
 }
 
+
+/* Footer Section */
+/* Optional: main content grows to fill the available space */
+main {
+  flex: 1;
+}
+
+/* Footer Container */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns (each 25%) */
+  width: 96.5%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #262626;
+  text-align: center;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  color: white;
+  box-sizing: border-box;
+  margin-top: auto; /* Push footer to bottom if content is short */
+}
+
+/* Footer Column (default: 4‑column layout) */
+.footer-column {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* 4‑column layout: vertical dividers (right borders) on columns 1-3 */
+.footer-column:not(:nth-child(4n)) {
+  border-right: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+/* 2‑column layout (max-width: 600px) */
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+  /* Remove any vertical borders */
+  .footer-column {
+    border-right: none !important;
+    border-bottom: none; /* Clear previous bottom borders if any */
+  }
+  /* Add bottom border only to the top row (first 2 items) */
+  .footer-column:nth-child(-n+2) {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* 1‑column layout (max-width: 400px) */
+@media (max-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr; /* Single column */
+    width: 96.5%; /* Remains 96.5% width */
+    min-width: 300px;
+    max-width: 300px;
+  }
+  /* Remove vertical borders and add bottom border to all except last */
+  .footer-column {
+    border-right: none !important;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+  .footer-column:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Footer icons */
+.footer-icon {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: invert(1); /* Makes icons white */
+}
+
+/* Footer links */
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
