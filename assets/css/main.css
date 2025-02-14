@@ -629,11 +629,11 @@ main {
   .footer-column {
     border-right: none !important;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+    padding-bottom: 25px;
   }
   .footer-column:last-child {
     border-bottom: none;
-    padding-top: 30px;
-    padding-bottom: 25px;
   }
 }
 
