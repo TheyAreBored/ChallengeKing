@@ -607,6 +607,7 @@ main {
 @media (max-width: 600px) {
   .footer {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    padding: 0px;
   }
   /* Remove any vertical borders */
   .footer-column {
@@ -629,6 +630,7 @@ main {
     grid-template-columns: 1fr; /* Single column */
     width: 96.5%; /* Remains 96.5% width */
     min-width: 300px;
+    padding: 0px;
   }
   /* Remove vertical borders and add bottom border to all except last */
   .footer-column {
