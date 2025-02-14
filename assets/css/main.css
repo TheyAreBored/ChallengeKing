@@ -595,6 +595,7 @@ main {
 /* Footer Column (default: 4‑column layout) */
 .footer-column {
   box-sizing: border-box;
+  align-content: center;
 }
 
 /* 4‑column layout: vertical dividers (right borders) on columns 1-3 */
