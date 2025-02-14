@@ -582,7 +582,7 @@ main {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px 10px;
   background-color: #262626;
   text-align: center;
   position: relative;
@@ -609,14 +609,18 @@ main {
   }
   /* Remove any vertical borders */
   .footer-column {
-    border-right: none !important;
-    border-bottom: none; /* Clear previous bottom borders if any */
+        border-right: none !important;
+        padding: 18px 0px 18px 0px !important;
+        align-content: end;
+        margin: 10px;
+        border-bottom: none;
   }
   /* Add bottom border only to the top row (first 2 items) */
   .footer-column:nth-child(-n+2) {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
   }
 }
+
 
 /* 1‑column layout (max-width: 400px) */
 @media (max-width: 400px) {
