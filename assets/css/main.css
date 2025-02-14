@@ -579,7 +579,7 @@ main {
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns (each 25%) */
-  width: 96.5%;
+  width: 90%;
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
