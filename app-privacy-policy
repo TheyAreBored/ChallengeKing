@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Privacy Policy</title>
+</head>
+
+    <h1>App Privacy Policy</h1>
+
+    <iframe src="assets/app-privacy-policy.pdf" width="80%" height="600px" style="border: none;">
+        This browser does not support PDFs. Please <a href="assets/app-privacy-policy.pdf">download the PDF</a> instead.
+    </iframe>
+
+</body>
+</html>
