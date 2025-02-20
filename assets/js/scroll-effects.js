@@ -44,4 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     animateOnLoad();
     window.addEventListener("scroll", updateElements);
     window.addEventListener("resize", updateElements);
+
+    // Fix disappearing elements when revisiting the page
+    window.addEventListener("pageshow", updateElements);
 });
