@@ -170,41 +170,20 @@ img#sunrays {
 
 
 /* Clouds CSS */
-body {
-    overflow-x: hidden;
-}
-
-.content {
-  display: block;
-  position: relative;
-  width: 400px;
-  height: 200px;
-  background: red;
-  margin: 0px auto;
-  margin-top: 10px
-}
-
-
 .cloud_large {
-    	height: 150px;
+    	height: 75px;
     	display: flex;
 	display: -webkit-flex;
 }
 
 .cloud_medium {
-    	height: 100px;
+    	height: 40px;
 	display: flex;
 	display: -webkit-flex;
 }
 
 .cloud_small {
-    	height: 50px;
-    	display: flex;
-	display: -webkit-flex;
-}
-
-.cloud_verysmall {
-    	height: 25px;
+    	height: 20px;
     	display: flex;
 	display: -webkit-flex;
 }
