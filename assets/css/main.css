@@ -212,11 +212,14 @@ body {
     height: 100px;
 }
 
-.cloud_verysmall_above {
+.cloud_verysmall {
     top: 170px;
     Left: 80%;
-    width: 400px; /* Larger cloud */
-    height: 150px;
+    width: 100px; /* Larger cloud */
+    height: 50px;
+}
+
+.cloud_above {
     z-index: 2;
 }
 
