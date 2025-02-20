@@ -186,33 +186,21 @@ body {
 
 
 .cloud_large {
-    position: absolute;
-    top: 170px;
-    left: 10%;
     width: 400px; /* Larger cloud */
     height: 150px;
 }
 
 .cloud_medium {
-    position: absolute;
-    top: 360px;
-    left: 40%;
     width: 250px; /* Smaller cloud */
     height: 200px
 }
 
 .cloud_small {
-    position: absolute;
-    top: 0px;
-    left: 5%;
     width: 200px;
     height: 100px;
 }
 
 .cloud_verysmall {
-    position: absolute;
-    top: 170px;
-    Left: 80%;
     width: 100px; /* Larger cloud */
     height: 50px;
 }
@@ -221,6 +209,30 @@ body {
     z-index: 2;
 }
 
+
+#cloud_1 {
+    position: absolute;
+    top: 170px;
+    left: 10%;
+}
+
+#cloud_2 {
+    position: absolute;
+    top: 360px;
+    left: 40%;
+}
+
+#cloud_3 {
+    position: absolute;
+    top: 0px;
+    left: 5%;
+}
+
+#cloud_4 {
+    position: absolute;
+    top: 170px;
+    Left: 80%;
+}
 
 /* Top Section CSS */
 #top_section {
