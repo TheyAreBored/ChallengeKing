@@ -351,7 +351,7 @@ div#app_store_icons {
   height: 50%;
   top: 25%;
   left: 25%;
-  background: white;
+  background: #ffffffc2;
   clip-path: polygon(
     50% 0%, 61% 35%, 98% 35%, 
     68% 57%, 79% 91%, 50% 70%, 
@@ -373,6 +373,8 @@ div#app_store_icons {
     display: flex;
     display: -webkit-flex;
     justify-content: center;
+    background: white;
+    border-radius: 20px;
 }
 
 .quote-slider {
@@ -503,7 +505,7 @@ div#share_section {
     	border-radius: 20px;
     	border: 1.5px dashed #5F9E9C;
     	display: block;
-	background: white;
+	background: #ffffffc2;
     	height: 150px;
     	margin: auto;
     	margin-top: 20px;
@@ -659,7 +661,7 @@ img#crown_jewels_right {
 /* App Icon Section */
 div#app_icon_section {
 	height: 175px;
-    	background-color: white;
+    	background-color: #ffffffc2;
 	border: 3px solid #87CDCA;
 	border-radius: 20px;
 	margin-top: 20px;
