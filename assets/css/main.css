@@ -621,6 +621,7 @@ main {
   padding: 20px 10px;
   background-color: #262626;
   text-align: center;
+  align-items: center: /*Used to ensure iPad content is centered*/
   position: relative;
   border-radius: 20px 20px 0 0;
   color: white;
@@ -668,6 +669,7 @@ main {
     width: 96.5%; /* Remains 96.5% width */
     min-width: 300px;
     padding: 0px;
+    min-height: 750px;
   }
   /* Remove vertical borders and add bottom border to all except last */
   .footer-column {
