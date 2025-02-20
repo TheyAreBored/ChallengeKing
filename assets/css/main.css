@@ -186,29 +186,25 @@ body {
 
 
 .cloud_large {
-    	width: 400px; /* Larger cloud */
     	height: 150px;
     	display: flex;
 	display: -webkit-flex;
 }
 
 .cloud_medium {
-    	width: 250px; /* Smaller cloud */
-    	height: 200px;
+    	height: 100px;
 	display: flex;
 	display: -webkit-flex;
 }
 
 .cloud_small {
-    	width: 200px;
-    	height: 100px;
+    	height: 50px;
     	display: flex;
 	display: -webkit-flex;
 }
 
 .cloud_verysmall {
-    	width: 100px; /* Larger cloud */
-    	height: 50px;
+    	height: 25px;
     	display: flex;
 	display: -webkit-flex;
 }
