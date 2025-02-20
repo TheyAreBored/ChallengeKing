@@ -186,52 +186,60 @@ body {
 
 
 .cloud_large {
-    width: 400px; /* Larger cloud */
-    height: 150px;
+    	width: 400px; /* Larger cloud */
+    	height: 150px;
+    	display: flex;
+	display: -webkit-flex;
 }
 
 .cloud_medium {
-    width: 250px; /* Smaller cloud */
-    height: 200px
+    	width: 250px; /* Smaller cloud */
+    	height: 200px;
+	display: flex;
+	display: -webkit-flex;
 }
 
 .cloud_small {
-    width: 200px;
-    height: 100px;
+    	width: 200px;
+    	height: 100px;
+    	display: flex;
+	display: -webkit-flex;
 }
 
 .cloud_verysmall {
-    width: 100px; /* Larger cloud */
-    height: 50px;
+    	width: 100px; /* Larger cloud */
+    	height: 50px;
+    	display: flex;
+	display: -webkit-flex;
 }
 
 .cloud_above {
-    z-index: 2;
+    	z-index: 2;
 }
 
 
 #cloud_1 {
-    position: absolute;
-    top: 170px;
-    left: 10%;
+    	position: absolute;
+    	top: 170px;
+    	left: 10%;
 }
 
 #cloud_2 {
-    position: absolute;
-    top: 360px;
-    left: 40%;
+    	position: absolute;
+	top: 360px;
+    	left: 40%;
 }
 
 #cloud_3 {
-    position: absolute;
-    top: 0px;
-    left: 5%;
+    	position: absolute;
+    	top: 0px;
+    	left: 5%;
 }
 
 #cloud_4 {
-    position: absolute;
-    top: 170px;
-    Left: 80%;
+    	position: absolute;
+    	top: 170px;
+    	Left: 80%;
 }
 
 /* Top Section CSS */
@@ -295,6 +303,7 @@ div#app_store_icons {
 .star-parent-container {
   padding-top: 30px;
   display: flex;
+  display: -webkit-flex;
   justify-content: center; /* Centers the stars */
   align-items: center;
   gap: 8px; /* Adjust spacing between stars */
@@ -366,6 +375,7 @@ div#app_store_icons {
     position: relative;
     height: 180px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
 }
 
@@ -383,6 +393,7 @@ div#app_store_icons {
   transition: opacity 0.5s ease-in-out;
   width: 100%;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
