@@ -169,6 +169,58 @@ img#sunrays {
 }
 
 
+/* Clouds CSS */
+body {
+    overflow-x: hidden;
+}
+
+.content {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background: red;
+  margin: 0px auto;
+  margin-top: 10px
+}
+
+.cloud {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+
+.cloud_large {
+    top: 170px;
+    left: 10%;
+    width: 400px; /* Larger cloud */
+    height: 150px;
+    z-index: 2;
+}
+
+.cloud_medium {
+    top: 360px;
+    left: 40%;
+    width: 250px; /* Smaller cloud */
+    height: 200px
+}
+
+.cloud_small {
+    top: 0px;
+    left: 5%;
+    width: 200px;
+    height: 100px;
+}
+
+.cloud_verysmall_above {
+    top: 170px;
+    Left: 80%;
+    width: 400px; /* Larger cloud */
+    height: 150px;
+    z-index: 2;
+}
+
+
 /* Top Section CSS */
 #top_section {
 	height: 470px;
