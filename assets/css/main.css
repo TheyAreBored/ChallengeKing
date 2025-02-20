@@ -691,6 +691,7 @@ main {
 /* Footer Container */
 .footer {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(4, 1fr); /* 4 equal columns (each 25%) */
   width: 90%;
   max-width: 900px;
