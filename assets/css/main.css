@@ -522,10 +522,16 @@ div#social_sharing_icons img {
 
 img#tiktok_logo {
     	padding-left: 15px;
+	padding-right: 15px;
 }
 
 img#facebook_logo {
     	padding-right: 15px;
+}
+
+img#youtube_logo {
+    width: 57px !important;
+    padding-bottom: 5px;
 }
 
 /* Are You Fit Enough Section */
