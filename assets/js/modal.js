@@ -1,97 +1,78 @@
-(function() {
-  // Replace with your actual Apps Script URL:
-  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycogZtDr3fZC-XhFW21w-hqyqlL0A3Fk6CLzbMC_fK4_cK30fbEMjt4btR7M7tfNj-/exec';
+<script>
+  // Set this to your actual Google Apps Script URL
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycogZtDr3fZC-XhFW21w-hqyqlL0A3Fk6CLzbMC_fK4_cK30fbEMjt4btR7M7tfNj-/exec';
 
-  // Grab elements
-  var openModalBtn  = document.getElementById('play_store_icon');
-  var closeModalBtn = document.getElementById('close-modal');
-  var backdrop      = document.getElementById('modal-backdrop');
-  var form          = document.getElementById('interest-form');
-  var submitBtn     = document.getElementById('submit-btn');
-  var successMsg    = document.getElementById('success-msg');
-  var errorMsg      = document.getElementById('error-msg');
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('modal');
+    const backdrop = document.getElementById('modal-backdrop');
+    const openModalBtn = document.getElementById('play_store_icon');
+    const closeModalBtn = document.getElementById('close-modal');
+    const form = document.getElementById('interest-form');
+    const submitBtn = document.getElementById('submit-btn');
 
-  // Only run if the trigger button exists
-  if (!openModalBtn) {
-    console.warn('Modal trigger button not found: #my-preexisting-trigger');
-    return;
-  }
+    // Open modal when the image is clicked
+    if (openModalBtn) {
+      openModalBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        backdrop.style.display = 'flex';
+      });
+    }
 
-  // Show modal
-  openModalBtn.addEventListener('click', function() {
-    backdrop.style.display = 'flex';
-  });
+    // Close modal
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener('click', function () {
+        backdrop.style.display = 'none';
+      });
+    }
 
-  // Close modal
-  closeModalBtn.addEventListener('click', function() {
-    backdrop.style.display = 'none';
-    resetForm();
-  });
+    // Close modal if clicking outside the modal
+    if (backdrop) {
+      backdrop.addEventListener('click', function (event) {
+        if (event.target === backdrop) {
+          backdrop.style.display = 'none';
+        }
+      });
+    }
 
-  // Close when clicking outside the modal
-  backdrop.addEventListener('click', function(e) {
-    if (e.target === backdrop) {
-      backdrop.style.display = 'none';
-      resetForm();
+    // Handle form submission
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const firstName = document.getElementById('firstName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const consent = document.getElementById('consent').checked;
+
+        if (!firstName || !email || !consent) {
+          alert('Please fill in all fields and check the consent box.');
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Sending...';
+
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ firstName, email, consent }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            alert('Thanks! We’ll keep you updated.');
+            form.reset();
+            backdrop.style.display = 'none';
+          })
+          .catch((error) => {
+            console.error('Error!', error.message);
+            alert('There was an error submitting the form.');
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerText = 'Submit';
+          });
+      });
     }
   });
-
-  // Form submission handler
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending…';
-
-    var payload = {
-      firstName: document.getElementById('firstName').value.trim(),
-      email:     document.getElementById('email').value.trim(),
-      consent:   document.getElementById('consent').checked
-    };
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', SCRIPT_URL, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit';
-
-        if (xhr.status === 200) {
-          try {
-            var response = JSON.parse(xhr.responseText);
-            if (response.status === 'success') {
-              successMsg.style.display = 'block';
-              form.style.display = 'none';
-            } else {
-              showError();
-            }
-          } catch (err) {
-            console.error(err);
-            showError();
-          }
-        } else {
-          showError();
-        }
-      }
-    };
-
-    xhr.send(JSON.stringify(payload));
-  });
-
-  // Reset form state
-  function resetForm() {
-    form.reset();
-    successMsg.style.display = 'none';
-    errorMsg.style.display   = 'none';
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Submit';
-    form.style.display = '';
-  }
-
-  // Display error
-  function showError() {
-    errorMsg.style.display = 'block';
-  }
-
-})();
+</script>
