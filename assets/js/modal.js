@@ -3,7 +3,7 @@
   var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycogZtDr3fZC-XhFW21w-hqyqlL0A3Fk6CLzbMC_fK4_cK30fbEMjt4btR7M7tfNj-/exec';
 
   // Grab elements
-  var openModalBtn  = document.getElementById('my-preexisting-trigger');
+  var openModalBtn  = document.getElementById('play_store_icon');
   var closeModalBtn = document.getElementById('close-modal');
   var backdrop      = document.getElementById('modal-backdrop');
   var form          = document.getElementById('interest-form');
