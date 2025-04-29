@@ -35,24 +35,38 @@
 
 
 		<!-- Start of register interest Modal -->
-<div id="modal-backdrop">
+<!-- Place this iframe somewhere in your page (it can be hidden) -->
+<iframe name="ghost-frame" style="display:none;"></iframe>
+
+<!-- Modal backdrop / form -->
+<div id="modal-backdrop" style="display:none;">
   <div id="modal">
-    <button class="close-btn" id="close-modal">&times;</button>
+    <button id="close-modal">×</button>
     <h2>Register Interest</h2>
     <p>We’ll be on the Google Play Store soon. Leave us your details and we’ll send you an email to keep you updated.</p>
-    <form id="interest-form">
-      <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-      <input type="email" id="email" name="email" placeholder="Email Address" required>
+    <form 
+      id="interest-form"
+      action="https://script.google.com/macros/s/AKfycbycogZtDr3fZC-XhFW21w-hqyqlL0A3Fk6CLzbMC_fK4_cK30fbEMjt4btR7M7tfNj-/exec" 
+      method="POST" 
+      target="ghost-frame"
+    >
+      <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
       <label>
-        <input type="checkbox" id="consent" name="consent" required>
+        <input type="checkbox" name="consent" id="consent" value="true" required>
         I agree to let you use my email solely for the purpose of contacting me.
       </label>
       <button type="submit" id="submit-btn">Submit</button>
     </form>
-    <div id="success-msg">Thank you! We’ll be in touch.</div>
-    <div id="error-msg">Oops, something went wrong. Please try again later.</div>
+    <div id="success-msg" style="display:none; color:green; margin-top:1em;">
+      Thank you! We’ll be in touch.
+    </div>
+    <div id="error-msg" style="display:none; color:red; margin-top:1em;">
+      Sorry, something went wrong.
+    </div>
   </div>
 </div>
+
 <!-- End of register interest Modal -->
 		
 		<!--Start of Clouds For Parallax - Absolutely Positioned -->
