@@ -282,6 +282,7 @@ div#app_store_icons {
 
 #video_section iframe {
 	width: 80%;
+	max-width: 640px;
 	height: 160px;
 }
 
