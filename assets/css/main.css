@@ -286,6 +286,12 @@ div#app_store_icons {
 	height: 160px;
 }
 
+@media (min-width: 300px) {
+	#video_section iframe {
+		height: 200px;
+	}
+}
+
 @media (min-width: 480px) {
 	#video_section iframe {
 		height: 240px;
