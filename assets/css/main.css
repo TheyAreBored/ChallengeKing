@@ -282,33 +282,28 @@ div#app_store_icons {
 
 #video_section iframe {
 	width: 80%;
+	height: 160px;
 }
 
-@media (max-width: 320px) {
-	#video_section iframe {
-		height: 160px;
-	}
-}
-
-@media (max-width: 480px) {
+@media (min-width: 480px) {
 	#video_section iframe {
 		height: 240px;
 	}
 }
 
-@media (max-width: 750px) {
+@media (min-width: 750px) {
 	#video_section iframe {
 		height: 385px;
 	}
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
 	#video_section iframe {
 		height: 500px;
 	}
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 	#video_section iframe {
 		height: 600px;
 	}
