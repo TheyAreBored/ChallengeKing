@@ -272,6 +272,56 @@ div#app_store_icons {
 }
 
 
+/* Video Section CSS */
+
+#video_section {
+    text-align: center;
+    position: relative;
+    top: 11px;
+}
+
+#video_section iframe {
+    height: 350px;
+    width: 90%;
+}
+
+@media (max-width: 320px) {
+	#video_section iframe {
+		height: 160px;
+	}
+}
+
+@media (max-width: 480px) {
+	#video_section iframe {
+		height: 240px;
+	}
+}
+
+@media (max-width: 481px) {
+	#video_section iframe {
+		height: 240px;
+	}
+}
+
+@media (max-width: 769px) {
+	#video_section iframe {
+		height: 385px;
+	}
+}
+
+@media (max-width: 1025px) {
+	#video_section iframe {
+		height: 512px;
+	}
+}
+
+@media (max-width: 1200px) {
+	#video_section iframe {
+		height: 600px;
+	}
+}
+
+
 /* Quote Section CSS */
 
 /* Stars */
