@@ -280,11 +280,6 @@ div#app_store_icons {
     top: 11px;
 }
 
-#video_section iframe {
-    height: 350px;
-    width: 90%;
-}
-
 @media (max-width: 320px) {
 	#video_section iframe {
 		height: 160px;
@@ -297,21 +292,15 @@ div#app_store_icons {
 	}
 }
 
-@media (max-width: 481px) {
-	#video_section iframe {
-		height: 240px;
-	}
-}
-
-@media (max-width: 769px) {
+@media (max-width: 750px) {
 	#video_section iframe {
 		height: 385px;
 	}
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
 	#video_section iframe {
-		height: 512px;
+		height: 500px;
 	}
 }
 
