@@ -280,6 +280,10 @@ div#app_store_icons {
     top: 11px;
 }
 
+#video_section iframe {
+	width: 80%;
+}
+
 @media (max-width: 320px) {
 	#video_section iframe {
 		height: 160px;
