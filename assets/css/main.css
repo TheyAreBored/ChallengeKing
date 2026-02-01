@@ -300,16 +300,9 @@ div#app_store_icons {
 
 @media (min-width: 1000px) {
 	#video_section iframe {
-		height: 500px;
+		height: 400px;
 	}
 }
-
-@media (min-width: 1200px) {
-	#video_section iframe {
-		height: 600px;
-	}
-}
-
 
 /* Quote Section CSS */
 
