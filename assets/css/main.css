@@ -265,6 +265,12 @@ img#sunrays {
     	left: -12%;
 }
 
+#cloud_13 {
+    	position: absolute;
+    	top: 700px;
+    	left: 10%;
+}
+
 
 /* Top Section CSS */
 #top_section {
