@@ -201,7 +201,7 @@ img#sunrays {
 
 #cloud_2 {
     	position: absolute;
-	top: 360px;
+		top: 360px;
     	left: 40%;
 }
 
@@ -213,9 +213,40 @@ img#sunrays {
 
 #cloud_4 {
     	position: absolute;
-    	top: 170px;
-    	Left: 80%;
+    	top: 500px;
+    	Left: 10%;
 }
+
+#cloud_5 {
+    	position: absolute;
+    	top: 600px;
+    	Left: 90%;
+}
+
+#cloud_6 {
+    	position: absolute;
+    	top: 700px;
+    	Left: 30%;
+}
+
+#cloud_7 {
+    	position: absolute;
+    	top: 800px;
+    	Left: 40%;
+}
+
+#cloud_8 {
+    	position: absolute;
+    	top: 900px;
+    	Left: 70%;
+}
+
+#cloud_9 {
+    	position: absolute;
+    	top: 1000px;
+    	Left: 95%;
+}
+
 
 /* Top Section CSS */
 #top_section {
