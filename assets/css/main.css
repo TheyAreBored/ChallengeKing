@@ -247,6 +247,24 @@ img#sunrays {
     	left: 95%;
 }
 
+#cloud_10 {
+    	position: absolute;
+    	top: 1100px;
+    	left: 95%;
+}
+
+#cloud_11 {
+    	position: absolute;
+    	top: 1200px;
+    	left: 20%;
+}
+
+#cloud_12 {
+    	position: absolute;
+    	top: 1300px;
+    	left: 10%;
+}
+
 
 /* Top Section CSS */
 #top_section {
