@@ -220,7 +220,7 @@ img#sunrays {
 #cloud_5 {
     	position: absolute;
     	top: 600px;
-    	left: 90%;
+    	right: 10%;
 }
 
 #cloud_6 {
@@ -244,7 +244,7 @@ img#sunrays {
 #cloud_9 {
     	position: absolute;
     	top: 1000px;
-    	left: 95%;
+    	right: 5%;
 }
 
 #cloud_10 {
