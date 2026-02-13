@@ -113,6 +113,15 @@ input, select, textarea {
 
 /* CK CUSTOM CSS */
 /* All Sections CSS */
+
+/*The page wrapper prevents the clouds on the right from allowing people to scroll right */
+.page_wrapper {
+	position: relative; /* traps absolute elements inside */
+    width: 100%;
+    overflow-x: hidden; /* cuts off the clouds */
+    min-height: 100vh;
+}
+
 p {
   	font-family: "Quicksand", serif;
   	font-optical-sizing: auto;
