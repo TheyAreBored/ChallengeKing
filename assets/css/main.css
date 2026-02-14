@@ -277,13 +277,13 @@ img#sunrays {
 
 /* Top Section CSS */
 #top_section {
-	height: 480px;
+	height: 485px;
 	background-color: #87CDCA;
     	border-radius: 0px 0px 20px 20px;
 }
 
 #top_section img#sunrays {
-   	height: 480px;
+   	height: 485px;
 }
 
 div#ck_logo {
@@ -312,7 +312,7 @@ div#download_for_free {
 }
 
 div#download_for_free img {
-	width: 154px;
+	width: 200px;
 	padding-right: 7px;
 }
 
